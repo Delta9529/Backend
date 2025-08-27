@@ -1,0 +1,13 @@
+POST http://localhost:8082/user/register
+Content-Type: application/json
+
+{
+    "fullname": "Shubham Pandey",
+    "username": "deltadev",
+    "email": "pandeyxvii.com",
+    "password": ""
+}
+
+###
+Get http://localhost:8082/user/all
+X-Auth: x-Header_key
