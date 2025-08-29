@@ -11,3 +11,13 @@ Content-Type: application/json
 ###
 Get http://localhost:8082/user/all
 X-Auth: x-Header_key
+
+###
+POST http://localhost:8082/discussion/new
+Content-Type: application/json
+
+{
+    "title": "Topic_12",
+    "author": "deltadev",
+    "content": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+}
