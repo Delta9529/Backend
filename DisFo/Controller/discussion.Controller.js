@@ -24,4 +24,13 @@ const postDiscussion = async (req, res) => {
   }
 };
 
-module.exports = { postDiscussion };
+const getAllDiscussions = async(req,res) => {
+  try {
+    const discussions = await Discussion.find();
+    res.json(discussions);
+  }catch(error) {
+    res.status(500).json({message: "Server Error", error : error.message})
+  }
+}
+
+module.exports = { postDiscussion, getAllDiscussions };

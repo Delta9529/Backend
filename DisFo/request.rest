@@ -18,6 +18,10 @@ Content-Type: application/json
 
 {
     "title": "Topic_12",
-    "author": "deltadev",
+    "author": "deltadev2",
     "content": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
 }
+
+###
+GET http://localhost:8082/discussion/all1
+x-api-key : abracadabra
