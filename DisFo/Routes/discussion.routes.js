@@ -4,7 +4,11 @@ const {
     postDiscussion
 } = require("../Controller/discussion.Controller");
 
-router.post("/new", postDiscussion);
+const {
+    fetchAuthor
+} = require("../Middleware/discussion.middleware")
+
+router.post("/new", fetchAuthor, postDiscussion);
 //router.get("/all", );
 
 module.exports = router;
